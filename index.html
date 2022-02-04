@@ -28,8 +28,9 @@
                 <div id="form-control">
                     <h2>Choose your name</h2>
                     <label for="username">Player Name</label>
-                    <input type="text" name="username" id="username">
+                    <input type="text" name="username" id="username" required>
                 </div>
+                <p id="error-message"></p>
                 <div>
                     <button type="button" class="btn btn-alt" id="cancel-overlay-btn">Cancel</button>
                     <button type="submit" class="btn" id="confirm-btn">Confirm</button>
@@ -39,20 +40,20 @@
         <section id="game-configuration">
             <ol>
                 <li>
-                    <article>
+                    <article id="player-1">
                         <h2>Player 1</h2>
                         <h3>Player Name</h3>
                         <p>X</p>
-                        <button class="btn btn-alt" id="player-configuration-btn-1">Edit</button>
+                        <button class="btn btn-alt" id="player-configuration-btn-1" data-playerid="1">Edit</button>
 
                     </article>
                 </li>
                 <li>
-                    <article>
+                    <article id="player-2">
                         <h2>Player 2</h2>
                         <h3>Player Name</h3>
                         <p>O</p>
-                        <button class="btn btn-alt" id="player-configuration-btn-2">Edit</button>
+                        <button class="btn btn-alt" id="player-configuration-btn-2" data-playerid="2">Edit</button>
 
                     </article>
                 </li>
