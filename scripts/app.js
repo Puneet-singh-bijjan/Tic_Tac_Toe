@@ -1,5 +1,7 @@
 let selectedPlayer = 0;
 let activePlayer = 0;
+let countItems = 1;
+let isGameOver = false;
 
 let playerData = [
     [0,0,0],
@@ -24,7 +26,9 @@ const formElement = document.querySelector('form');
 const errorOutputElement = document.getElementById('error-message');
 const gameBoardElement = document.getElementById('active-game');
 const gameFieldElements = document.querySelectorAll('#game-board li');
+const gameFieldElement = document.getElementById('game-board');
 const activeplayerNameElement = document.getElementById('active-player-name');
+const gameOverElement = document.getElementById('game-over');
 
 const player1ConfigElement = document.getElementById('player-configuration-btn-1');
 const player2ConfigElement = document.getElementById('player-configuration-btn-2');
